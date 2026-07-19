@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spectandi"
+version = "0.1.0"
+description = "Lightweight OpenTelemetry-based tracing SDK for AI agent observability — sends traces to Spectandi (spectandi.com)."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [
+    { name = "Spectandi", email = "hello@spectandi.com" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "opentelemetry-api>=1.42.1",
+    "opentelemetry-sdk>=1.42.1",
+    "anthropic>=0.105.2",
+    "requests>=2.34.2",
+    "python-dotenv>=1.2.2",
+]
+
+[project.urls]
+Homepage = "https://spectandi.com"
+Repository = "https://github.com/volshenok/spectandi"
